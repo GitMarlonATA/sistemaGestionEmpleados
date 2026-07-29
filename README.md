@@ -1,27 +1,58 @@
-# SistemaGestion
+# Employee Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-## Development server
+> A single-page application for managing employee records — create, list, edit, and remove employees — built with Angular 11 and TypeScript.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project demonstrates a clean Angular architecture: feature components, services for data access, reactive forms with validation, and client-side routing.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- List employees in a table
+- Create and edit employees with reactive-form validation
+- Delete with confirmation
+- Client-side routing between views
+
+## Tech stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Angular 11 |
+| Language | TypeScript |
+| Tooling | Angular CLI, Karma (unit), Protractor (e2e) |
+
+## Getting started
+
+### Prerequisites
+- Node.js 16+ and npm
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Run locally
+```bash
+git clone https://github.com/GitMarlonATA/sistemaGestionEmpleados.git
+cd sistemaGestionEmpleados
+npm install
+ng serve
+```
+
+Open http://localhost:4200 — the app reloads automatically on source changes.
+
+## Tests
+```bash
+ng test        # unit tests (Karma)
+ng e2e         # end-to-end tests
+```
 
 ## Build
+```bash
+ng build --prod   # outputs to dist/
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Roadmap
+- [ ] Connect to a live REST backend (see my `ledger-service` repo for a Spring Boot API)
+- [ ] Add pagination and server-side filtering
+- [ ] Migrate to a current Angular LTS version
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+Built by [Marlon Ticora](https://github.com/GitMarlonATA) · [LinkedIn](https://www.linkedin.com/in/marlon-augusto-ticora-alvarez-fullstack-ml/)
